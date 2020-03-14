@@ -11,13 +11,14 @@ export default createGlobalStyle`
   }
 
   html, body, #root {
+    -webkit-font-smoothing: antialiased !important;
     min-height: 100%;
   }
 
   body {
     background: url(${background}) no-repeat center;
     background-size: cover;
-    -webkit-font-smoothing: antialiased !important;
+
     margin: 0 20px;
   }
 
