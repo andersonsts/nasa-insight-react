@@ -43,5 +43,6 @@ module.exports = {
     'react/prefer-stateless-function': 'off',
     'import/prefer-default-export': 'off',
     'react/jsx-props-no-spreading': 'off',
+    'react/prop-types': 'off'
   },
 };

@@ -1,6 +1,15 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+export const Loading = styled.div`
+  position: absolute;
+  top: 32px;
+  left: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Container = styled.div`
   position: absolute;
   right: 8%;
@@ -15,7 +24,8 @@ export const Container = styled.div`
   align-items: center;
   font-family: Arial, Helvetica, sans-serif;
   box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.2);
-  transition: all 0.25s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  opacity: ${props => (props.ready ? '1' : '0')};
 
   &:hover {
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
@@ -74,6 +84,7 @@ export const BackButton = styled(Link)`
   top: 40px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
+  opacity: ${props => (props.ready ? '1' : '0')};
 
   &:hover {
     transform: translateX(1%);

@@ -1,11 +1,22 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
 
+export const Loading = styled.div`
+  position: absolute;
+  top: 32px;
+  left: 6%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+`;
+
 export const Container = styled.div`
   position: absolute;
   top: 32px;
   left: 7%;
   font-family: Arial, Helvetica, sans-serif;
+  transition: opacity 0.3s ease-in-out;
+  opacity: ${props => (props.ready ? '1' : '0')};
 
   h1 {
     width: 450px;
@@ -39,6 +50,8 @@ export const SolList = styled.ul`
   justify-content: space-between;
   bottom: 10%;
   left: 2%;
+  transition: opacity 0.3s ease-in-out;
+  opacity: ${props => (props.ready ? '1' : '0')};
 
   li {
     background: rgba(0, 0, 0, 0.5);
@@ -56,7 +69,7 @@ export const SolList = styled.ul`
       box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.1);
       transform: translateY(-2%);
 
-      > div span:last-child {
+      > div span span {
         transform: scale(1.05);
       }
     }
@@ -99,6 +112,12 @@ export const InfoTitle = styled.span`
   letter-spacing: 1px;
   display: flex;
   align-items: center;
+  flex-direction: column;
+
+  > div {
+    display: flex;
+    align-items: center;
+  }
 
   svg {
     margin-right: 8px;
@@ -110,6 +129,8 @@ export const Temperature = styled.span`
   margin-top: 20px;
   color: #fff;
   transition: all 0.3s ease-in-out;
+  display: flex;
+  align-items: center;
 `;
 
 export const InfoButton = styled(Link)`
@@ -131,6 +152,7 @@ export const InfoButton = styled(Link)`
   top: 45px;
   font-weight: bold;
   transition: all 0.3s ease-in-out;
+  opacity: ${props => (props.ready ? '1' : '0')};
 
   &:hover {
     transform: translateX(1%);
