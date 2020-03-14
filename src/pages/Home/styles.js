@@ -12,7 +12,7 @@ export const Container = styled.div`
     font-size: 50px;
     color: #fff;
     line-height: 1.2;
-    text-shadow: 0px 0px 4px rgba(0, 0, 0);
+    text-shadow: 0px 0px 4px rgba(0, 0, 0, 0.2);
   }
 
   p {
@@ -50,10 +50,10 @@ export const SolList = styled.ul`
     border-radius: 4px;
     padding: 25px 20px;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.2);
+    box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.2);
 
     &:hover {
-      box-shadow: 0px 0px 5px rgba(255, 255, 255, 0.1);
+      box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.1);
       transform: translateY(-2%);
 
       > div span:last-child {

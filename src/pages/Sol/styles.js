@@ -27,13 +27,13 @@ export const Container = styled.div`
 
   img {
     width: 100px;
-    margin: 60px 0 30px;
+    margin: 40px 0 30px;
     border-radius: 50%;
     box-shadow: 0px 0px 10px rgba(255, 255, 255, 0.1);
     transition: all 0.25s ease-in-out;
   }
 
-  strong {
+  > strong {
     font-size: 45px;
     color: #fff;
   }
@@ -44,8 +44,15 @@ export const Container = styled.div`
     font-size: 25px;
     color: #eee;
     margin-top: 5px;
+    margin-bottom: 30px;
     padding-bottom: 20px;
     border-bottom: 1px solid #777;
+  }
+
+  h2 {
+    font-size: 25px;
+    font-weight: normal;
+    color: #eee;
   }
 `;
 
@@ -75,78 +82,67 @@ export const BackButton = styled(Link)`
   }
 `;
 
-export const Info = styled.div`
-  display: flex;
-  justify-content: flex-start;
-  flex-direction: column;
-  font-family: Arial, Helvetica, sans-serif;
+export const Info = styled.table`
   color: #fff;
-  margin-top: 30px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-top: 20px;
   width: 80%;
 
-  p:first-child {
-    font-size: 20px;
+  tr {
     display: flex;
-    align-items: center;
-    justify-content: flex-start;
+    justify-content: space-between;
+    align-items: baseline;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.2);
+    padding-bottom: 5px;
 
-    > svg {
-      margin-left: 5px;
+    & + tr {
+      margin-top: 40px;
+    }
+
+    td:nth-child(2n) {
+      text-align: start;
+    }
+
+    td:nth-child(2n + 1) {
+      text-align: end;
+    }
+
+    td:nth-child(2) {
+      width: 100%;
+      margin-left: 25px;
+    }
+
+    td:nth-child(3) {
+      width: 100%;
+      font-size: 20px;
+    }
+
+    td:last-child {
+      width: 50%;
+      text-align: start;
+    }
+
+    td p {
       font-size: 18px;
     }
 
-    > p {
-      margin-left: 10px;
-
-      > span {
-        font-size: 22px;
-        margin-left: 100px;
-        color: #eee;
-      }
-    }
-  }
-
-  p:nth-child(2) {
-    margin: 10px 0;
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    > svg {
-      margin-right: 3px;
+    td svg {
+      width: 18px;
+      height: 18px;
     }
 
-    > p {
-      margin-left: 10px;
-
-      > span {
-        font-size: 22px;
-        margin-left: 140px;
-        color: #eee;
-      }
+    td strong {
+      font-size: 25px;
+      color: #fff;
+      font-weight: lighter;
     }
-  }
 
-  p:nth-child(3) {
-    font-size: 20px;
-    display: flex;
-    align-items: center;
-    justify-content: flex-start;
-
-    > svg {
-      margin-left: 2px;
+    td span {
       font-size: 18px;
-    }
-
-    > p {
-      margin-left: 12px;
-
-      > span {
-        font-size: 22px;
-        margin-left: 140px;
-        color: #eee;
-      }
+      margin-left: 10px;
+      color: #eee;
+      opacity: 0.8;
+      font-weight: lighter;
     }
   }
 `;

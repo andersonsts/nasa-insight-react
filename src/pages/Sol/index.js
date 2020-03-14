@@ -1,6 +1,10 @@
 import React from 'react';
-import { FaArrowLeft, FaTemperatureLow, FaCompress } from 'react-icons/fa';
-import { WiHumidity } from 'react-icons/wi';
+import {
+  FaArrowLeft,
+  FaTemperatureLow,
+  FaCompress,
+  FaWind,
+} from 'react-icons/fa';
 
 import { Container, BackButton, Info } from './styles';
 
@@ -18,25 +22,50 @@ export default function Sol() {
         <strong>Sol 292</strong>
         <span>Aug. 19</span>
 
+        <h2>Averages</h2>
         <Info>
-          <p>
-            <FaTemperatureLow />
-            <p>
-              Temperature <span> -17 °F</span>
-            </p>
-          </p>
-          <p>
-            <WiHumidity />
-            <p>
-              Humidity <span> 124 </span>
-            </p>
-          </p>
-          <p>
-            <FaCompress />
-            <p>
-              Pressure <span> 213 </span>
-            </p>
-          </p>
+          <tr>
+            <td>
+              <FaTemperatureLow />
+            </td>
+            <td>
+              <p>Temperature</p>
+            </td>
+            <td>
+              <strong> -17 </strong>
+            </td>
+            <td>
+              <span> °F </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <FaWind />
+            </td>
+            <td>
+              <p>Wind Speed</p>
+            </td>
+            <td>
+              <strong> 13,5 </strong>
+            </td>
+            <td>
+              <span> mph </span>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <FaCompress />
+            </td>
+            <td>
+              <p>Pressure</p>
+            </td>
+            <td>
+              <strong> 633,5 </strong>
+            </td>
+            <td>
+              <span> Pa </span>
+            </td>
+          </tr>
         </Info>
       </Container>
     </>
