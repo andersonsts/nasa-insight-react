@@ -43,14 +43,7 @@ Este projeto utiliza as seguintes tecnologias:
 -  [VS Code][vc] com [EditorConfig][vceditconfig], [ESLint][vceslint] e [Prettier](https://github.com/prettier/prettier-eslint)
 
 ## :bookmark_tabs: Requisitos
-Antes de executar a aplicação, insira em seu terminal o comando abaixo para iniciar
-a api utilizando [json-server](https://github.com/typicode/json-server).
-
-```bash
-# Executa a api na porta 3333
-$ json-server server.json -p 3333 -w
-
-```
+Essa aplicação consome os dados fornecidos pela [API Nasa insight](https://github.com/andersonsts/api-nasa-insight). Você deve rodar essa API antes de executar a aplicação
 
 ## :information_source: Executar
 
