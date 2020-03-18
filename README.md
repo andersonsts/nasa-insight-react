@@ -22,8 +22,8 @@
 
 <p align="center">
   <a href="#rocket-tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#information_source-como-usar">Como usar</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
-  <a href="#bookmark_tabs-requisitos">Requisitos</a>
+  <a href="#bookmark_tabs-requisitos">Requisitos</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+  <a href="#information_source-executar">Executar</a>
 </p>
 
 ![App Screenshot](https://res.cloudinary.com/andersonsts/image/upload/v1584553766/home_knmthv.png)
@@ -32,7 +32,7 @@
 
 ## :rocket: Tecnologias
 
-Este projeto foi desenvolvido no [Bootcamp GoStack - Rocketseat](https://rocketseat.com.br/bootcamp), com as seguintes tecnologias:
+Este projeto utiliza as seguintes tecnologias:
 
 -  [ReactJS](https://reactjs.org/)
 -  [React Router Dom](https://reacttraining.com/react-router/web/guides/quick-start)
@@ -42,24 +42,6 @@ Este projeto foi desenvolvido no [Bootcamp GoStack - Rocketseat](https://rockets
 -  [react-loader-spinner](https://github.com/mhnpd/react-loader-spinner)
 -  [VS Code][vc] com [EditorConfig][vceditconfig], [ESLint][vceslint] e [Prettier](https://github.com/prettier/prettier-eslint)
 
-## :information_source: Como usar
-
-Para clonar e executar essa aplicação você precisa do [Git](https://git-scm.com), [Node.js v10.16][nodejs] ou superior + [Yarn v1.13][yarn] ou superior instalado em sua máquina. Em seu terminal de comando, execute:
-
-```bash
-# Clone este repositório
-$ git clone https://github.com/andersonsts/react-rocketshoes
-
-# Entre no repositorio
-$ cd react-rocketshoes
-
-# Instale as dependências
-$ yarn install
-
-# Execute a aplicação
-$ yarn start
-```
-
 ## :bookmark_tabs: Requisitos
 Antes de executar a aplicação, insira em seu terminal o comando abaixo para iniciar
 a api utilizando [json-server](https://github.com/typicode/json-server).
@@ -68,6 +50,24 @@ a api utilizando [json-server](https://github.com/typicode/json-server).
 # Executa a api na porta 3333
 $ json-server server.json -p 3333 -w
 
+```
+
+## :information_source: Executar
+
+Para clonar e executar essa aplicação você precisa do [Git](https://git-scm.com), [Node.js v10.16][nodejs] ou superior + [Yarn v1.13][yarn] ou superior instalado em sua máquina. Em seu terminal de comando, execute:
+
+```bash
+# Clone este repositório
+$ git clone https://github.com/andersonsts/nasa-insight-react
+
+# Entre no repositorio
+$ cd nasa-insight-react
+
+# Instale as dependências
+$ yarn install
+
+# Execute a aplicação
+$ yarn start
 ```
 
 ---
