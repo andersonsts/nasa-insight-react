@@ -26,9 +26,9 @@
   <a href="#bookmark_tabs-requisitos">Requisitos</a>
 </p>
 
-![App Screenshot](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/home_ckrkdf.png)
+![App Screenshot](https://res.cloudinary.com/andersonsts/image/upload/v1584553766/home_knmthv.png)
 
-![App Screenshot2](https://res.cloudinary.com/andersonsts/image/upload/v1584477440/cart_xgns8o.png)
+![App Screenshot2](https://res.cloudinary.com/andersonsts/image/upload/v1584553766/info_p8kwls.png)
 
 ## :rocket: Tecnologias
 
