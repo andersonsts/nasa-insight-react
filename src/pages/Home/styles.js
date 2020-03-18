@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 export const Loading = styled.div`
   position: absolute;
-  top: 32px;
-  left: 6%;
+  top: 35px;
+  left: 8%;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -69,8 +69,9 @@ export const SolList = styled.ul`
       box-shadow: 0px 0px 7px rgba(255, 255, 255, 0.1);
       transform: translateY(-2%);
 
-      > div span span {
+      > div span span.temp {
         transform: scale(1.05);
+        text-shadow: 0px 0px 5px rgba(255, 255, 255, 0.5);
       }
     }
 
@@ -131,6 +132,7 @@ export const Temperature = styled.span`
   transition: all 0.3s ease-in-out;
   display: flex;
   align-items: center;
+  text-shadow: 0px 0px 5px rgba(255, 255, 255, 0);
 `;
 
 export const InfoButton = styled(Link)`

@@ -3,8 +3,8 @@ import { Link } from 'react-router-dom';
 
 export const Loading = styled.div`
   position: absolute;
-  top: 32px;
-  left: 6%;
+  top: 35px;
+  left: 8%;
   display: flex;
   align-items: center;
   justify-content: center;

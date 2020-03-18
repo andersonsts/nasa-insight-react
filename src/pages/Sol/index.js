@@ -49,7 +49,7 @@ export default class Sol extends Component {
       <>
         {loading ? (
           <Loading>
-            <Loader type="Audio" color="#fff" height={100} width={100} />
+            <Loader type="Bars" color="#fff" height={100} width={100} />
           </Loading>
         ) : (
           <>

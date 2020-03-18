@@ -62,7 +62,7 @@ export default class Home extends Component {
       <>
         {loading ? (
           <Loading>
-            <Loader type="Audio" color="#fff" height={100} width={100} />
+            <Loader type="Bars" color="#fff" height={100} width={100} />
           </Loading>
         ) : (
           <>
@@ -85,7 +85,9 @@ export default class Home extends Component {
                         <FaTemperatureLow />
                         <p>Temperature</p>
                       </div>
-                      <Temperature>{temperature} °F</Temperature>
+                      <Temperature className="temp">
+                        {temperature} °F
+                      </Temperature>
                     </InfoTitle>
                   </Info>
                 </li>
